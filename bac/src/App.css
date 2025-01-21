@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Poppins:wght@400;500;600&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:wght@400;500;600&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body
+{
+  font-family: "poppins",serif;
+  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --gray:#33333319;
+  --green:#4BAE4F;
+  --background: blueviolet;
+  --Plum :#DDA0DD;
+  --DarkOrchid :#9932CC;
+  --MediumPurple :#9470dbef;
+
+}
+
+.container
+{
+  background: url(./Asset/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 10px;
+}
+
+.todo-list
+{
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.481);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgb(255, 255, 255,.2);
+  max-width: 540px;
+  margin: 100px auto 20px;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+/* *******TITLE-CSS************* */
+.title__icon
+{
+  margin-left: 15px;
+}
+
+.todo-list .title
+{
+  margin-bottom: 25px;
+  align-items:  center;
+}
+
+
+form{
+  margin-bottom: 25px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.task__input
+{
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.405);
+  outline: none;
+  font-size: 17px;
+  padding: 10px;
+  color: rgb(219, 187, 187);
+  
+}
+
+.btn-add
+{
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  width: 15%;
+  background-color: #9470dba5;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-family: "Raleway", serif;
+  font-weight: 600;
+}
+
+.btn-add:hover
+{
+  background-color: #9470dbed;
+}
+
+/* *******ITEM-CSS************* */
+
+.list-items .list-item{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 25px;
+background-color: #bda2f397;
+border-radius: 7px;
+height: 40px;
+padding: 15px;
+font-family: "Raleway", serif;
+font-weight: 600;
+transition: all 0.5s ease ,box-shadow 0.4s ease;
+}
+
+.list-item:hover{
+  background-color: #9470db95;
+  box-shadow: 0px 3px 15px rgba(76, 74, 74, 0.589);
+}
+
+.list-items .list-item .custom-checkbox
+{
+  margin-right: 35px;
+  position: relative;
+}
+
+.list-items .list-item .custom-checkbox .checkmark,
+.list-items .list-item .custom-checkbox  svg{
+position: absolute;
+top: 0;
+left: 0;
+border-radius: 50%;
+height: 20px;
+width: 20px;
+cursor: pointer;
+}
+
+.list-items .list-item .custom-checkbox .checkmark{
+  border: 1px solid rgba(0, 0, 0, 0.379);
+}
+
+.list-items .list-item .custom-checkbox  svg{
+  background-color: var(--green);
+  padding: 3px;
+}
+
+.list-items .list-item .custom-checkbox input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 10px;
+}
+
+.list-items .list-item .description.selected{
+  color: #8a588a;
+  text-decoration: line-through;
+}
+
+.list-items .list-item .x-btn{
+  border: none;
+  cursor: pointer;
+  color:#8a588a; 
+  background: transparent;
+  font-size: 24px;
+}
