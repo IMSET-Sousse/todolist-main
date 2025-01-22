@@ -107,6 +107,43 @@ Exemple de scénario :
 * Diagrammes UML finalisés.  
 * Version déployée sur un environnement cloud.
 
+
+ACTIVITY DIAGRAM:
+Étape 1 : Affichage de l'interface utilisateur : L'application affiche l'interface où l'utilisateur peut entrer une nouvelle tâche.
+Étape 2 : Saisie de la nouvelle tâche : L'utilisateur entre le texte de la tâche qu'il souhaite créer.
+Étape 3 : Validation de la tâche : Le système vérifie si la tâche est valide (par exemple, si elle n'est pas vide).
+Si la tâche est valide, elle est sauvegardée dans la base de données et une confirmation de la création est affichée.
+Si la tâche n'est pas valide (par exemple, si elle est vide), un message d'erreur est affiché à l'utilisateur.
+Fin : Le processus se termine après l'affichage de la confirmation ou du message d'erreur.
+
+
 ![activity diagram](/docs/conception/activity-diagram.png)
+
+
+SEQUANCE DIAGRAM:
+Acteur :
+
+Utilisateur : L'utilisateur qui interagit avec l'application.
+Participants :
+
+Interface Utilisateur (UI) : L'interface avec laquelle l'utilisateur interagit (par exemple, l'écran ou l'application).
+Contrôleur des Tâches (TaskController) : La logique métier qui gère la création et la gestion des tâches.
+Base de Données (Database) : Le système de stockage des données des tâches.
+Flux d'interaction :
+
+L'Utilisateur saisit une nouvelle tâche dans l'Interface Utilisateur.
+L'Interface Utilisateur envoie une demande de création de tâche au Contrôleur des Tâches.
+Le Contrôleur des Tâches enregistre la tâche dans la Base de Données.
+La Base de Données confirme que la tâche a bien été enregistrée.
+Le Contrôleur des Tâches renvoie la confirmation de la création de la tâche à l'Interface Utilisateur.
+Enfin, l'Interface Utilisateur affiche une confirmation à l'Utilisateur.
+
 ![sequance diagram](/docs/conception/sequance-diagram.png)
-![activity diagram](/docs/conception/activity-diagram.png)
+
+USECASE DIAGRAM :
+Ce diagramme décrit les principales interactions entre l'utilisateur et le système :
+S’inscrire/se connecter.
+Ajouter/modifier/supprimer une tâche.
+Recevoir des notifications.
+
+![use case diagram](/docs/conception/use-case-diagram.png)
