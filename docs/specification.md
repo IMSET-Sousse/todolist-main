@@ -57,7 +57,7 @@
 
 * **Front-end :** React.js pour la création de composants réactifs et dynamiques.  
 * **Back-end :** Flask pour la gestion des API REST.  
-* **Base de données :** PostgreSQL pour une gestion fiable des données relationnelles.
+* **Base de données :** SQL pour une gestion fiable des données relationnelles.
 
 #### **4.2. Diagrammes UML**
 
@@ -98,7 +98,7 @@ Exemple de scénario :
 * **Front-end :** React.js avec Material-UI pour les composants.  
 * **Back-end :** Flask avec SQLAlchemy pour la gestion des données.  
 * **API :** RESTful pour une communication claire entre client et serveur.  
-* **Base de données :** PostgreSQL avec hébergement sur un service cloud.
+* **Base de données :** sql avec hébergement sur un service cloud.
 
 ### **6\. Livrables**
 
