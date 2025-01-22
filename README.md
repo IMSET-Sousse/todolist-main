@@ -1,0 +1,3 @@
+# TO DO List
+
+L’objectif principal du projet est de développer une application web permettant aux utilisateurs de gérer efficacement leurs listes de tâches ("To-Do List"). Cette application doit offrir une interface moderne, intuitive et réactive, permettant de créer, organiser, modifier et supprimer des tâches. Le projet sera réalisé en utilisant React pour le front-end et Flask pour le back-end, avec une architecture basée sur une API REST.
