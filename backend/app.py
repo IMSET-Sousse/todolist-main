@@ -5,7 +5,7 @@ from flask_cors import CORS
 from datetime import datetime
 
 app = Flask(__name__)
-CORS(app)
+CORS (app)
 
 # Database configuration
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root@localhost/todolist'

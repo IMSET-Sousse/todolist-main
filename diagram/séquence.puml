@@ -1,0 +1,13 @@
+@startuml
+actor Utilisateur
+participant "Interface Utilisateur" as UI
+participant "Contrôleur des Tâches" as TaskController
+participant "Base de Données" as Database
+
+Utilisateur -> UI : Saisir une nouvelle tâche
+UI -> TaskController : Demander la création de la tâche
+TaskController -> Database : Sauvegarder la tâche
+Database -> TaskController : Confirmer la sauvegarde
+TaskController -> UI : Afficher la confirmation
+UI -> Utilisateur : Confirmer la création de la tâche
+@enduml

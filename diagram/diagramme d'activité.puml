@@ -1,0 +1,14 @@
+@startuml
+start
+
+:Afficher l'interface utilisateur;
+:Utilisateur saisit une nouvelle tâche;
+if (La tâche est valide ?) then (oui)
+  :Sauvegarder la tâche dans la base de données;
+  :Afficher confirmation de la création;
+else (non)
+  :Afficher message d'erreur;
+endif
+
+stop
+@enduml
